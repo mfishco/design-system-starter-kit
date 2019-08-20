@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salesforce Lightning Design System Starter Kit</title>
+  <title>Event Sharing W-006144</title>
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="robots" content="noindex, nofollow" />
 
@@ -13,39 +13,46 @@
 </head>
 <body>
   <div class="slds-p-around--large slds-container--center slds-container--small">
-    <h1 class="slds-text-heading--large">
-      Welcome to the Design System Starter Kit
+    <h1 class="slds-text-heading--large slds-text-align_center">
+      Event Sharing UI Prototyping
     </h1>
-    <p class="slds-text-body--regular slds-m-vertical--large">A rapid prototyping environment using the <a href="https://www.lightningdesignsystem.com">Lightning Design System</a>, brought to you by <a href="https://twitter.com/SalesforceUX">Salesforce UX</a>.</p>
+    <p class="slds-text-body--regular slds-m-vertical--large">Intent: rapid prototyping of UI elements related to story W-006144 - Event Sharing.</p>
+    <hr />
+    <p class="slds-text-body_regular">
 
-    <img src="/assets/img-efficiency.svg" alt="" />
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">Get Started</h2>
-    <p class="slds-text-body--regular slds-m-top--large">Edit files in the <a href="https://github.com/salesforce-ux/design-system-starter-kit/tree/master/src"><code>src</code> directory</a> to start building your prototype.</p>
-    <p class="slds-text-body--regular slds-m-top--large">Lightning Design System component documentation and markup available at: <a href="https://www.lightningdesignsystem.com">https://www.lightningdesignsystem.com</a>.</p>
+    <h2 class="slds-text-heading--medium slds-m-top--large">Event Record Page UI Elements</h2>
+
+    <p class="slds-text-body--regular slds-m-top--large">Event Record Page </p>
+    <p class="slds slds-text-body_small">We are considering adding a UI element to the Event record page that would provide users with information about the current state of event sharing, as well as allow the user to change the overall event from view only to view/edit Mission-wide (account wide). </p>
+    <br />
+    <p class="sl slds-text-body_small">(note new UI element titled "Event Sharing" in right column below)</p>
+    <a target="_blank" href="./assets/EventRecordPageDropdown.png"><img src="./assets/EventRecordPageDropdown.png" /> </a>
+    <p></p><br />
+    <p class="slds-text-body--small slds-m-top--large">A close-up view of one of the new proposed sharing components is pictured here along with some alternatives.  (Click to interact, then close the tab to return to this page)</p>
+    <p></p><br />
+    <a target="_blank" href="./EventPageSharingComponentDropdown.html"><img src="../assets/EventPageSharingComponentDropdown.png" /> </a>
+    <p></p><br />
+    <p class="slds-text-body_small">Using a toggle to restrict editing (Click to interact, then close the tab to return to this page)</p>
+    <p></p><br />
+    <a target="_blank" href="./EventPageSharingComponentToggleNeg.html"><img src="../assets/EventPageSharingToggleNeg.png" /> </a>
+    <p></p><br />
+    <p class="slds-text-body_small">Using a toggle to allow editing (Click to interact, then close the tab to return to this page)</p>
+    <p></p><br />
+    <a target="_blank" href="./EventPageSharingComponentTogglePos.html"><img src="../assets/EventPageSharingTogglePos.png" /> </a>
+
     <hr />
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">TrailheaDX Workshop Tutorial</h2>
-    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">Learn how to design in the browser and quickly prototype with the TrailheaDX 2017 tutorial, “Rapid Prototyping with the Design System Starter Kit”.</p>
-    <p>
-      <a href="https://tdx-starter-kit.herokuapp.com/" class="slds-button slds-button--brand">TrailheaDX Tutorial</a>
-      <a href="/workshop.html" class="slds-button slds-button--neutral">DIY Boilerplate</a>
-      <a href="/workshop-done.html" class="slds-button slds-button--neutral">Result</a>
-    </p>
-    <hr />
+    <h2 class="slds-text-heading--medium slds-m-top--large">Selection Modal to Allow a User to Edit an Event</h2>
+    <p class="slds slds-text-body_small">Once an event is restricted to only certain users being able to edit it, the Event owner must select any additional users (if any) that will have rights to edit the event. This will take the form of a modal pop-up that must be closed before the user can return to the event.</p>
+    <p></p><br />    <p class="slds-text-body_small">Modal Grid (Click to interact, then close the tab to return to this page)</p>
+    <a target="_blank" href="./eventsharingmodalgrid.html"><img src="../assets/EventSharingModalGrid.png" /> </a>
+    <p></p><br />
+    <p class="slds-text-body_small">Modal Multi-Select Boxes (Click to interact, then close the tab to return to this page)</p>
+    <a target="_blank" href="./EventSharingModalMultiSelect.html"><img src="../assets/EventSharingModalMulti.png" /> </a>
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">Example Prototype with Data</h2>
-    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">We’ve put together a prototype to show you what the starter kit is capable of, have a look!</p>
-    <p class="slds-text-body--regular slds-m-vertical--large">Data shown in this example comes from <a href="https://github.com/salesforce-ux/design-system-starter-kit/blob/master/src/views/data/example.json">views/data/example.json</a>. Check out the <a href="https://github.com/salesforce-ux/design-system-starter-kit/blob/master/src/views/data/README.md">README</a> to learn how we are injecting data with "gulp-nunjucks".</p>
-    <p><a href="/example.html" class="slds-button slds-button--brand">Example Prototype</a></p>
-    <hr />
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">Feedback and Questions</h2>
-    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">Ask questions about prototyping using the design system, report issues about the starter kit… <a href="https://github.com/salesforce-ux/design-system-starter-kit/">on the GitHub repository</a>.</p>
-    <hr />
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">See Also</h2>
-    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">More comfortable designing in <a href="https://www.sketchapp.com/">Sketch</a>? Try the <a href="https://github.com/salesforce-ux/design-system-ui-kit/">Design System UI Kit</a>.</p>
 
   </div>
 
