@@ -7,13 +7,13 @@
   "scripts": {
     "test": "gulp",
     "dev": "gulp",
-    "prestart": "gulp",
+    "prestart": "gulp build && node server",
     "lint:js": "eslint . --format codeframe",
     "lint:css": "stylelint src/styles/**/*.scss"
   },
   "engines": {
-    "node": "^11.0.0",
-    "npm": ">=3.10.5"
+    "node": "^12.0.0",
+    "npm": "^6.0.0"
   },
   "keywords": [
     "lightning",

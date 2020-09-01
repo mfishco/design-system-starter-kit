@@ -1,0 +1,14 @@
+# pack-refs with: peeled fully-peeled sorted 
+0f798cc268d9db486a9b7b8c65956f1c096dd03b refs/heads/PackageUpdate
+3afaa8dce2c88c92cb6832e2c77919ae36ed1ef7 refs/heads/fix/deploy
+e7dfe68ffd596d2ea7ec09fa65198d3e543721e0 refs/heads/greenkeeper/@salesforce-ux/design-system-2.3.1
+8d7f5c7131a8331d0117c9a7bdc2e59d6443e63d refs/heads/greenkeeper/browser-sync-2.18.12
+6e7fa69facad4d02a5a2bd046fc1e447fb5a501d refs/heads/greenkeeper/eslint-config-standard-pin-10.0.0
+a0ac5420700ed274c87a9821c6c206df0b89a839 refs/heads/greenkeeper/eslint-plugin-import-2.3.0
+40cbb6789830d93189ec7f2e4dd4a94b262b9de5 refs/heads/greenkeeper/eslint-plugin-import-2.4.0
+913068c04c1e9ec90f593d36d38cd37b6a397cdd refs/heads/greenkeeper/eslint-plugin-node-5.0.0
+050d8bf48d486ad7cdadcde1782296d20232635b refs/heads/interaction
+b8ebae5074650c8f7d978375cf61c70d31120c92 refs/heads/master
+497e38ca765206d51a41797276c594aa4cf231c2 refs/heads/react
+5b1be1f8571019d3e324dd10e68d80b91f9d3772 refs/heads/test/codacy
+c0d9e5735c8ced485385e1da62c6f435e47b4237 refs/heads/website-update
