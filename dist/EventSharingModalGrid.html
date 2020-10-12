@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce Lightning Design System Starter Kit</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+  <!--
+    Base Global Header component
+    https://www.lightningdesignsystem.com/components/global-header/
+  -->
+
+  <header class="slds-global-header_container">
+  </header>
+
+
+
+  <!--
+    Placeholder to push the context bar down
+  -->
+  <div class="app-header-placeholder"></div>
+
+  <!--
+    Navigation Bar component
+    https://www.lightningdesignsystem.com/components/global-navigation/
+  -->
+
+  <main class="app-wrapper slds-template_default">
+
+
+    <div class="demo-only demo-only_viewport" style="height:640px">
+      <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_close" aria-labelledby="id-of-modalheader-h2" aria-modal="true" aria-describedby="modal-content-id-1">
+        <div class="slds-modal__container">
+          <header class="slds-modal__header">
+            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+              <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+              </svg>
+              <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2 id="id-of-modalheader-h2" class="slds-text-heading_medium">Manage View/Edit Users</h2>
+            <p class="slds-m-top_x-small">Event: 2019 Fourth of July Picnic and Fireworks</p>
+          </header>
+          <div class="slds-modal__content slds-grid slds-nowrap" id="modal-content-id-1">
+            <div class="slds-col slds-grid slds-grid_vertical slds-nowrap">
+              <div class="slds-p-vertical_x-small slds-p-horizontal_large slds-shrink-none slds-theme_shade">
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label slds-assistive-text" for="combobox-unique-id-21">Search</label>
+                  <div class="slds-form-element__control">
+                    <div class="slds-combobox_container">
+                      <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                          <input type="text" class="slds-input slds-combobox__input" id="combobox-unique-id-21" aria-autocomplete="list" aria-controls="listbox-unique-id" autoComplete="off" role="textbox" placeholder="Search Users" />
+                          <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                            <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                             <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+                            </svg>
+                           </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-text-title slds-m-top_x-small" aria-live="polite">0 Item(s) Selected</div>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-checkbox">
+                      <input type="checkbox" name="options" id="checkbox-44" value="checkbox-44" checked="" />
+                      <label class="slds-checkbox__label" for="checkbox-44">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">Select All</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slds-scrollable slds-grow">
+                <div class="slds-scrollable_none">
+                  <table aria-multiselectable="true" class="slds-table slds-table_bordered" role="grid">
+                    <thead>
+                      <tr class="slds-line-height_reset">
+                        <th class="" scope="col" >
+                          <div class="slds-truncate">Can Edit</div>
+                        </th>
+                        <th aria-label="Product Name" class="" scope="col">
+                          <div class="slds-truncate" title="User Name">User Name</div>
+                        </th>
+                        <th aria-label="Region_Consulate" class="" scope="col">
+                          <div class="slds-truncate" title="Region_Consulate"> Region/Consulate</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" tabindex="0">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-140" value="add-checkbox-140" tabindex="-1" />
+                          <label for="add-checkbox-140" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 1</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 1">Test User 1 (Event Owner)</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-141" value="add-checkbox-141" tabindex="-1" />
+                          <label for="add-checkbox-141" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 2</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 2">Test User 2</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-142" value="add-checkbox-142" tabindex="-1" />
+                          <label for="add-checkbox-142" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 3</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 3">Test User 3</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-143" value="add-checkbox-143" tabindex="-1" />
+                          <label for="add-checkbox-143" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 4</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 4">Test User 4</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-144" value="add-checkbox-144" tabindex="-1" />
+                          <label for="add-checkbox-144" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 5</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 5">Test User 5</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-145" value="add-checkbox-145" tabindex="-1" />
+                          <label for="add-checkbox-145" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 6</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 6">Test User 6</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-146" value="add-checkbox-146" tabindex="-1" />
+                          <label for="add-checkbox-146" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 7</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 7">Test User7 </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 8</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 9</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 10</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 11</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 12</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 13</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 14</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 8</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 15</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 16</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 8</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 17</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 18</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 19</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 20</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 21</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 22</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 23</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 24</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 25</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 26</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    <tr aria-selected="false" class="slds-hint-parent">
+                      <td class="slds-text-align_right" role="gridcell" style="width:3.75rem" tabindex="-1">
+                        <div class="slds-checkbox_add-button">
+                          <input type="checkbox" class="slds-assistive-text" id="add-checkbox-147" value="add-checkbox-147" tabindex="-1" />
+                          <label for="add-checkbox-147" class="slds-checkbox_faux">
+                            <span class="slds-assistive-text">Select item 8</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="Test User 8">Test User 27</div>
+                      </td>
+                      <td role="gridcell">
+                        <div class="slds-truncate" title="region1"> Mission Gotham</div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="slds-modal__footer">
+            <button class="slds-button slds-button_neutral">Cancel</button>
+            <button class="slds-button slds-button_brand">Save</button>
+          </footer>
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+
+
+
+  </main>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/vendor/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html>

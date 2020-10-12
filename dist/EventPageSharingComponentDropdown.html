@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce Lightning Design System Starter Kit</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+  <!--
+    Base Global Header component
+    https://www.lightningdesignsystem.com/components/global-header/
+  -->
+
+  <header class="slds-global-header_container">
+
+  </header>
+  </main>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/vendor/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+
+  <div class="slds-box" style="background-color:white;padding:0px;">
+    <div style="background-color:rgb(243, 242, 242);padding:4px;">
+      <div class="slds-text-heading_large slds-text-align_center">Event Sharing</div>
+      <div class="slds-grid slds-gutters slds-grid_align-center">
+        <div class="slds-col slds-size_2-of-4">
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="select-01">Event Sharing Rules</label>
+              <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                  <select class="slds-select" id="select-01">
+                    <option value="">Please select</option>
+                    <option>Event editable by everyone</option>
+                    <option>Event editable by selection</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="slds-col slds-size_2-of-4 slds-align-bottom">
+          <a href="/GridCheckBoxes.html" class="slds-align_absolute-center"><button class="slds-button slds-button_neutral">Edit Event Sharing</button></a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-left:12px;padding-right:12px" class="slds-border_bottom">
+    </div>
+  </div>
+</body>
+</html>

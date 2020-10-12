@@ -17,7 +17,7 @@
 !.gitkeep
 
 # Ignore dist directory containing built assets
-dist
+# dist
 
 # Ignore logs
 *.log
